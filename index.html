@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Tournament Hub App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff4500; /* Tournament Hub Orange */
+            --dark-bg: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --text-gray: #76808f;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: white;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        .header {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #ff4500 0%, #b33000 100%);
+            color: white;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0 5px 20px rgba(255,69,0,0.3);
+        }
+
+        .logo-container {
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
+            background: white;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border: 3px solid #fff;
+        }
+
+        .logo-container i {
+            font-size: 50px;
+            color: var(--primary);
+        }
+
+        .app-name {
+            font-size: 26px;
+            font-weight: 800;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .version-info {
+            background: rgba(255,69,0,0.15);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+            margin: 25px 0;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            font-weight: bold;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .feat-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .feat-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .feat-card i {
+            display: block;
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .feat-card p {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Download Button */
+        .download-btn {
+            background: linear-gradient(135deg, #ff4500 0%, #ff6a33 100%);
+            color: white;
+            text-decoration: none;
+            padding: 18px 0;
+            width: 100%;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(255,69,0,0.4);
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 25px rgba(255,69,0,0.5);
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+
+        .safe-badge {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #4caf50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: auto;
+            padding: 30px 20px;
+            color: var(--text-gray);
+            font-size: 12px;
+            text-align: center;
+        }
+
+        /* Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .logo-container { animation: pulse 3s infinite ease-in-out; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-container">
+            <i class="fas fa-trophy"></i>
+        </div>
+        <p class="app-name">Tournament Hub</p>
+        <div style="font-size: 12px; opacity: 0.8; margin-top: 5px;">Esports Management System</div>
+    </div>
+
+    <div class="content">
+        <span class="version-info">v2.1.0 • 12.4 MB • Android</span>
+        
+        <h2 style="margin-bottom: 10px;">Official App Download</h2>
+        <p style="color: var(--text-gray); font-size: 14px; line-height: 1.5;">Join daily Free Fire tournaments, track your wins, and get instant rewards.</p>
+
+        <div class="features">
+            <div class="feat-card">
+                <i class="fas fa-bolt"></i>
+                <p>Instant Join</p>
+            </div>
+            <div class="feat-card">
+                <i class="fas fa-shield-halved"></i>
+                <p>Anti-Cheat</p>
+            </div>
+            <div class="feat-card">
+                <i class="fas fa-wallet"></i>
+                <p>Auto Payout</p>
+            </div>
+            <div class="feat-card">
+                <i class="fas fa-headset"></i>
+                <p>24/7 Support</p>
+            </div>
+        </div>
+
+        <a href="THub.apk" download class="download-btn">
+            <i class="fas fa-download" style="margin-right: 10px;"></i> Download APK
+        </a>
+
+        <div class="safe-badge">
+            <i class="fas fa-circle-check"></i> 100% Safe & Secure Installation
+        </div>
+    </div>
+
+    <div class="footer">
+        Developed for Gamers by Tournament Hub Team<br>
+        © 2026 Tournament Hub. All Rights Reserved.
+    </div>
+
+</body>
+</html>
